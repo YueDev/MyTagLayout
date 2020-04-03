@@ -1,0 +1,2 @@
+rootProject.name='My Layout Test'
+include ':app'

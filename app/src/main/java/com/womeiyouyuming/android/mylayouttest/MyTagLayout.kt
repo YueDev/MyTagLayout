@@ -114,4 +114,9 @@ class MyTagLayout : ViewGroup {
     }
 
 
+    //不是滑动的viewgroup应该返回false
+    //这个方法就是让子view的触摸延迟100ms，来判断是不是滑动状态，默认返回true，非滑动viewgroup要返回false，这样触摸就没有100ms延迟，响应更快
+    override fun shouldDelayChildPressedState() = false
+
+
 }
